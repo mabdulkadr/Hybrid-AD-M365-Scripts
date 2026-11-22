@@ -23,7 +23,7 @@ A small repository of utilities for environments that span on-premises Active Di
 
 **Hybrid-AD-M365-Scripts** collects utilities for hybrid identity operations, where on-premises Active Directory and Microsoft Entra ID must stay aligned.
 
-Two entries are present: `HybridUserAudit` (a documented project that merges AD and Entra user attributes into an audit CSV) and `DSRegTool (1).ps1` (a standalone diagnostics helper).
+Two entries are present: `HybridUserAudit` (a documented project that merges AD and Entra user attributes into an audit CSV) and `Invoke-DsRegDiagnostics.ps1` (a standalone diagnostics helper).
 
 ---
 
@@ -46,7 +46,7 @@ Hybrid-AD-M365-Scripts/
 ├── HybridUserAudit/
 │   ├── README.md               # Full project documentation
 │   └── *.ps1                   # Audit script
-├── DSRegTool (1).ps1           # Standalone identity diagnostics helper
+├── Invoke-DsRegDiagnostics.ps1           # Standalone identity diagnostics helper
 └── README.md                   # This repository index
 ```
 
@@ -57,7 +57,7 @@ Hybrid-AD-M365-Scripts/
 | Script | Purpose |
 |--------|---------|
 | `HybridUserAudit\*.ps1` | Generates a merged AD + Entra user audit CSV with logging |
-| `DSRegTool (1).ps1` | Identity / hybrid join diagnostics helper |
+| `Invoke-DsRegDiagnostics.ps1` | Identity / hybrid join diagnostics helper |
 
 See [`HybridUserAudit/README.md`](HybridUserAudit/README.md) for parameters, output paths, and behavior.
 
@@ -81,7 +81,7 @@ See [`HybridUserAudit/README.md`](HybridUserAudit/README.md) for parameters, out
 # 🛡 Operational Notes
 
 * Reports contain user identity attributes; handle them as sensitive data and apply your retention policy.
-* Rename `DSRegTool (1).ps1` to a Verb-Noun name if you plan to keep and maintain it long term.
+* Rename `Invoke-DsRegDiagnostics.ps1` to a Verb-Noun name if you plan to keep and maintain it long term.
 * Run the audit against a pilot OU before a full-directory run.
 
 ---
@@ -113,6 +113,6 @@ This skill and every script it generates are provided as-is with no warranty of 
 
 [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/mabdulkadrx)
 
-Built with [**PowerShell Enterprise Admin**](https://github.com/mabdulkadr/powershell-enterprise-admin-skill)
+Built with [**PowerShell Enterprise Admin**](https://github.com/mabdulkadr/powershell-enterprise-admin)
 
 </div>
