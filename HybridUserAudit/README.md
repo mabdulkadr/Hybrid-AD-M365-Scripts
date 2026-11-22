@@ -7,7 +7,7 @@
 
 ## Overview
 
-**HybridUserAudit** is a PowerShell script designed to generate a comprehensive user report across a hybrid environment consisting of on-premises Active Directory and Microsoft Entra ID (Azure AD). It merges attributes from both sources, tracks login activity, and produces a CSV report for auditing, compliance, or inventory purposes.
+**HybridUserAudit** is a PowerShell script that generates a user report across a hybrid environment of on-premises Active Directory and Microsoft Entra ID (Azure AD). It merges attributes from both sources, tracks login activity, and produces a CSV report for auditing, compliance, or inventory purposes.
 
 ---
 
@@ -45,8 +45,8 @@
 
 ## Output
 
-* 📁 **CSV Report Path:** `C:\Reports\FullUserReport_yyyy-MM-dd_HH-mm.csv`
-* 📁 **Log File Path:** `C:\Reports\HybridUserAuditLog_yyyy-MM-dd_HH-mm.txt`
+* 📁 CSV Report Path: `C:\Reports\FullUserReport_yyyy-MM-dd_HH-mm.csv`
+* 📁 Log File Path: `C:\Reports\HybridUserAuditLog_yyyy-MM-dd_HH-mm.txt`
 
 ### CSV Columns
 
@@ -69,7 +69,7 @@
 
 ## Notes
 
-* ⚠️ This script does not modify any users — it only reads data.
+* ⚠️ This script only reads data; it does not modify any users.
 * 🛠️ Large directories may take several minutes to complete.
 * 🇸🇦 Fully supports Arabic environments (UTF-8 export).
 
